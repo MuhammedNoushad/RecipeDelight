@@ -120,6 +120,10 @@ table {
   border-bottom: 1px solid var(--stone-900);
 }
 
+.table-row:last-child {
+  border-bottom: none;
+}
+
 .table-column {
   padding-left: 14px;
 }
@@ -135,4 +139,29 @@ table {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 360px) {
+  body {
+    background-color: #f3e5d8;
+  }
+
+  .container {
+    max-width: 600px;
+    background-color: #ffffff;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .omelette-img {
+    border-radius: 0.5rem;
+  }
 }
